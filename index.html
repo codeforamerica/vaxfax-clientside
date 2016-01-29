@@ -5,58 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VaxFax</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="vaxfax.css">
 <style type="text/css">
-.bg-gray {background-color: lightgray;}
-.container {max-width: 400px;}
+header {}
 </style>
 
 </head>
 <body>
-	<div class="container bg-gray xcol-md-4 xcol-md-offset-4 xcenter-block">
+	<div class="container">
+	  	<header class="mb3">
 	  	<h1>Welcome to VaxFax!</h1>
 	    <p>Please complete this request form to have your child's immunization record sent to your school. All immunizations must be up to date and shared by August [TK].</p>
-	    <h4>First, we need to ask you a bit about your child's information so we can find the right record.</h4>
+	    <hr>
+	</header>
 
 	    <form>
+	    <h4>First, we need to ask you a bit about your child's information so we can find the right record.</h4>
 
 		  <div class="form-group">
 		    <label>What is your child's full name?</label>
 		    <input type="text" class="form-control" name="child_name">
 		  </div>
-		</form>
+<div class="xtest clearfix">	
+		<label>What is your child's date of birth?</label>
+		<div class="form-group col-xs-5">
+			<label>Month</label>
+			<select class="form-control">
+			    <option value="01">January</option>
+			    <option value="02">February</option>
+			    <option value="03">March</option>
+			    <option value="04">April</option>
+			    <option value="05">May</option>
+			    <option value="06">June</option>
+			    <option value="07">July</option>
+			    <option value="08">August</option>
+			    <option value="09">September</option>
+			    <option value="10">October</option>
+			    <option value="11">November</option>
+			    <option value="12">December</option>
+			</select>
+		</div>
 
-<form class="form-inline">
-	<select class="form-control">
-    <option value="01">January</option>
-    <option value="02">February</option>
-    <option value="03">March</option>
-    <option value="04">April</option>
-    <option value="05">May</option>
-    <option value="06">June</option>
-    <option value="07">July</option>
-    <option value="08">August</option>
-    <option value="09">September</option>
-    <option value="10">October</option>
-    <option value="11">November</option>
-    <option value="12">December</option>
-</select>
-
-  <div class="form-group">
-    <label for="exampleInputName2">Day</label>
-    <input type="number" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail2">Year</label>
-    <input type="number" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-  </div>
-</form>
-
-
-<form>
-		  <div class="form-group">
-		    <label>What is their date of birth?</label>
-		    <input type="text" class="form-control" name="">
+		  <div class="form-group col-xs-3">
+		    <label>Day</label>
+		    <input type="text" class="form-control" placeholder="Day">
 		  </div>
+
+		  <div class="form-group col-xs-4">
+		    <label>Year</label>
+		    <input type="text" class="form-control" placeholder="Year">
+		  </div>
+</div>	
+		<hr>
 		    <h4>Next, you can tell us where you would like the records sent. If you don't already have your school's fax number handy, you should check for it now.</h4>
 		  <div class="form-group">
 		    <label>What school district are you sending the records to?</label>
@@ -79,18 +79,31 @@
 		    <label>What's the best phone number to reach you with if we have any questions?</label>
 		    <input type="tel" class="form-control" name="requestor_phone">
 		  </div>
+
+		  <hr>
+
   		  <h4>We're almost ready to submit your record transfer request. First, read the description of what data we will use and what permissions we need to send it. Then, click "I accept" if you agree.</h4>
-  		  <small><p>I hereby request the disclosure of information from my child's record. </p>
+  		  <small>
+  		  	<p>I hereby request the disclosure of information from my child's record. </p>
+			<p>PROHIBITION OF REDISCLOSURE: This information has been disclosed to you from records whose confidentiality is protected by Federal Law. Federal regulation (42 CFR2) prohibits you from making any further disclosure of this information without my further consent. Additionally, I understand that this release may include information relating to: Acquired Immunodeficiency Syndrome (AIDS) or infection with HIV (Human Immunodeficiency Virus), psychiatric care, treatment for alcohol and/or drug abuse. I hereby absolve said person, firm, agency, physician, nurse, clinic, or hospital from any liability for releasing such information pursuant to this authorization.The Kansas City, Missouri Health Department and its staff who provide professional service to me are authorized to use any personal information about me for treatment, billing or healthcare operations within the Health Department. The Health Department as required by law discloses all positive reportable communicable diseases to the State Department of Health.I understand that I may revoke this consent at any time and that upon fulfillment of the above stated purpose, this consent will automatically expire without my express revocation, after ninety days from the date of signature. I do not authorize further release to any other third party.</p>
+			</small>
+			<button type="button" class="btn btn-primary">I accept</button>
+	</form>
 
-<p>PROHIBITION OF REDISCLOSURE: This information has been disclosed to you from records whose confidentiality is protected by Federal Law. Federal regulation ( 42 CFR2) prohibits you from making any further disclosure of this information without my further consent. Additionally, I understand that this release may include information relating to: Acquired Immunodeficiency Syndrome (AIDS) or infection with HIV (Human Immunodeficiency Virus), psychiatric care, treatment for alcohol and/or drug abuse. I hereby absolve said person, firm, agency, physician, nurse, clinic, or hospital from any liability for releasing such information pursuant to this authorization.The Kansas City, Missouri Health Department and its staff who provide professional service to me are authorized to use any personal information about me for treatment, billing or healthcare operations within the Health Department. The Health Department as required by law discloses all positive reportable communicable diseases to the State Department of Health.I understand that I may revoke this consent at any time and that upon fulfillment of the above stated purpose, this consent will automatically expire without my express revocation, after ninety days from the date of signature. I do not authorize further release to any other third party.</p>
-</small>
+	  <h4>Please confirm the following details:</h4>
+	  <ul class="list-unstyled">
+		<li><strong>Child's name:</strong> Banjo Edelman</li>
+		<li><strong>Date of birth:</strong> 1/17/06</li>
+		<li><strong>School name:</strong>  Garfield Elementary</li>
+		<li><strong>School fax number:</strong> 816-418-3600</li>
+		<li><strong>Send any questions to:</strong> Rachel Edelman at 518-542-5793</li>
+	  </ul>
+	  <button type="button" class="btn btn-primary">Send record request</button>
+	  <button type="button" class="btn btn-default">Edit request</button>
 
 
-
-
-<button type="button" class="btn btn-primary">I accept</button>
-		</form>
-</form>
+<p class="bg-success lead p2">Request Sent!</p>
+<p>We've asked the health department to send Banjo Edelman's immunization record to Garfield Elementary. If there are any issues with the request, you'll get a call at 518-542-5793.</p>
 
 
 	</div>
