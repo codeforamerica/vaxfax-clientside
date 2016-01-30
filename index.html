@@ -6,18 +6,25 @@
     <title>VaxFax</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="vaxfax.css">
-<style type="text/css">
-header {}
-</style>
 
 </head>
 <body>
-	<div class="container">
-	  	<header class="mb3">
-	  	<h1>Welcome to VaxFax!</h1>
-	    <p>Please complete this request form to have your child's immunization record sent to your school. All immunizations must be up to date and shared by August [TK].</p>
-	    <hr>
+	<header class="mb3 container">
+		header
+		<div id="google_translate_element"></div>
+		<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</header>
+
+	<div class="container">
+	  	<div class="xmb3">
+	  	<h1>Welcome to VaxFax!</h1>
+	    <p>Please complete this request form to have your child's immunization record sent to their school. Your child needs to have all their immunizations up to date and shared with their school by August [TK], or they won't be able to start school on time.</p>
+	    <hr>
+	</div>
 
 	    <form>
 	    <p class="lead">First, we need to ask you a bit about your child's information so we can find the right record.</>
@@ -57,7 +64,7 @@ header {}
 		  </div>
 </div>	
 		<hr>
-		    <p class="lead">Next, you can tell us where you would like the records sent. If you don't already have your school's fax number handy, you should check for it now.</p>
+		    <p class="lead">Next, you tell us where you would like the records sent.</p>
 		  <div class="form-group">
 		    <label>What school district are you sending the records to?</label>
 		    <input type="text" class="form-control" name="school_district">
