@@ -9,7 +9,7 @@
 
 </head>
 <body>
-	<header class="mb3 py1 container">
+	<header class="mb3 py3 container">
 		<div id="google_translate_element"></div><script type="text/javascript">
 		function googleTranslateElementInit() {
 		  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
@@ -18,7 +18,8 @@
     </header>
 
 	<div class="container">
-	  	<div class="xmb3">
+<div id="form-load">
+	  <div>
 	  	<h1>Welcome to VaxFax!</h1>
 	    <p>Please complete this request form to have your child's immunization record sent to their school. In order to start school on time, students need to have all their immunizations up to date and shared with the school by August 15th.</p>
 	    <hr>
@@ -26,7 +27,6 @@
 
 	    <form>
 	    <p class="lead">First, we need to ask you about your child so we can find the right record.</p>
-
 		  <div class="form-group">
 		    <label>What is your child's full name?</label>
 		    <input type="text" class="form-control" name="child_name">
@@ -75,6 +75,8 @@
 		    <label>What is the school's fax number?</label>
 		    <input type="tel" class="form-control" name="school_fax">
 		  </div>
+
+		  <hr>
 		  <p class="lead">Finally, let us know how to get in touch with you if we have any questions about your request.</p>
 		  <div class="form-group">
 		    <label>What is your full name?</label>
@@ -94,7 +96,8 @@
 			</small>
 			<button type="button" class="btn btn-primary">I accept</button>
 	</form>
-
+</div>
+<div id="confirmation">
 	  <p class="lead">Please confirm that the following details are correct:</p>
 	  <ul class="list-unstyled confirm-details">
 		<li><strong>Student's name:</strong> Banjo Edelman</li>
@@ -106,17 +109,16 @@
 	  </ul>
 	  <button type="button" class="btn btn-primary">Send record request</button>
 	  <button type="button" class="btn btn-default">Edit request</button>
+</div>
 
-
+<div id="success">
 <p class="bg-success lead p2">Request Sent!</p>
 <p>We've asked the health department to send Banjo Edelman's immunization record to Garfield Elementary. If there are any issues with the request, you'll get a call at 518-542-5793.</p>
+</div>
 
 	</div>
 <footer class="container mt3 py3">
 		<a href="mailto:kcmo@codeforamerica.org?Subject=VaxFax%20Website" target="_blank">Contact us</a>
-	
-
-
 </footer>
 
 
