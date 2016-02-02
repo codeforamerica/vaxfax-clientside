@@ -6,108 +6,103 @@
     <title>VaxFax</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="vaxfax.css">
-
-</head>
+  </head>
 <body>
-	<header class="mb3 py3 container">
-		<div id="google_translate_element"></div><script type="text/javascript">
-		function googleTranslateElementInit() {
-		  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-		}
-		</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <header class="mb3 py3 container">
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </header>
 
-	<div class="container">
+  <div class="container">
     <div id="form-load">
-  	  <div>
-  	  	<h1>Welcome to VaxFax!</h1>
-  	    <p>Please complete this request form to have your child's immunization record sent to their school. In order to start school on time, students need to have all their immunizations up to date and shared with the school by August 15th.</p>
-  	    <hr>
-  	  </div>
+      <div>
+        <h1>Welcome to VaxFax!</h1>
+        <p>Please complete this request form to have your child's immunization record sent to their school. In order to start school on time, students need to have all their immunizations up to date and shared with the school by August 15th.</p>
+        <hr>
+      </div>
 
-  	  <form>
-  	    <p class="lead">First, we need to ask you about your child so we can find the right record.</p>
-  		  <div class="form-group">
-  		    <label>What is your child's full name?</label>
-  		    <input type="text" class="form-control" name="child_name">
-  		  </div>
+      <form>
+        <p class="lead">First, we need to ask you about your child so we can find the right record.</p>
+        <div class="form-group">
+          <label>What is your child's full name?</label>
+          <input type="text" class="form-control" name="child_name">
+        </div>
 
         <div class="xtest row">
-  			  <label class="col-xs-12">What is your child's date of birth?</label>
-  			     <div class="form-group col-xs-5">
-  			      <label>Month</label>
-  				<select class="form-control">
-  				    <option value="01">January</option>
-  				    <option value="02">February</option>
-  				    <option value="03">March</option>
-  				    <option value="04">April</option>
-  				    <option value="05">May</option>
-  				    <option value="06">June</option>
-  				    <option value="07">July</option>
-  				    <option value="08">August</option>
-  				    <option value="09">September</option>
-  				    <option value="10">October</option>
-  				    <option value="11">November</option>
-  				    <option value="12">December</option>
-  				</select>
-  			</div>
+          <label class="col-xs-12">What is your child's date of birth?</label>
+            <div class="form-group col-xs-5">
+              <label>Month</label>
+              <select class="form-control">
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+            <div class="form-group col-xs-3">
+              <label>Day</label>
+              <input type="text" class="form-control" placeholder="Day">
+            </div>
 
-  			<div class="form-group col-xs-3">
-  			  <label>Day</label>
-  			  <input type="text" class="form-control" placeholder="Day">
-  			</div>
+            <div class="form-group col-xs-4">
+              <label>Year</label>
+              <input type="text" class="form-control" placeholder="Year">
+            </div>
+          </div>
+          <hr>
+          <p class="lead">Next, tell us where you would like the records sent.</p>
+          <div class="form-group">
+            <label>What school district are you sending the records to?</label>
+            <input type="text" class="form-control" name="school_district">
+          </div>
+          <div class="form-group">
+            <label>What is the name of the school?</label>
+            <input type="text" class="form-control" name="school_name">
+          </div>
+          <div class="form-group">
+            <label>What is the school's fax number?</label>
+            <input type="tel" class="form-control" name="school_fax">
+          </div>
+          <hr>
+          <p class="lead">Finally, let us know how to get in touch with you if we have any questions about your request.</p>
+          <div class="form-group">
+            <label>What is your full name?</label>
+            <input type="text" class="form-control" name="requestor_name">
+          </div>
+          <div class="form-group">
+            <label>What's the best phone number to reach you at?</label>
+            <input type="tel" class="form-control" name="requestor_phone">
+          </div>
+          <hr>
+          <p class="lead">We're almost ready to submit your record transfer request. Click "I accept" to grant us permission to make a record request on your behalf.</p>
+          <small>
+            <p>I hereby request the disclosure of information from my child's record. </p>
+            <p>
+              PROHIBITION OF REDISCLOSURE: This information has been disclosed to you from records whose confidentiality is protected by Federal Law. Federal regulation (42 CFR2) prohibits you from making any further disclosure of this information without my further consent. Additionally, I understand that this release may include information relating to: Acquired Immunodeficiency Syndrome (AIDS) or infection with HIV (Human Immunodeficiency Virus), psychiatric care, treatment for alcohol and/or drug abuse. I hereby absolve said person, firm, agency, physician, nurse, clinic, or hospital from any liability for releasing such information pursuant to this authorization.The Kansas City, Missouri Health Department and its staff who provide professional service to me are authorized to use any personal information about me for treatment, billing or healthcare operations within the Health Department. The Health Department as required by law discloses all positive reportable communicable diseases to the State Department of Health.I understand that I may revoke this consent at any time and that upon fulfillment of the above stated purpose, this consent will automatically expire without my express revocation, after ninety days from the date of signature. I do not authorize further release to any other third party.
+            </p>
+          </small>
+          <a href="confirmation.html" type="button" class="btn btn-primary mb3">I accept</a>
+      </form>
+    </div>
 
-  			<div class="form-group col-xs-4">
-  			  <label>Year</label>
-  			  <input type="text" class="form-control" placeholder="Year">
-  			</div>
-  	  </div>
-
-
-
-
-  		<hr>
-  		    <p class="lead">Next, tell us where you would like the records sent.</p>
-  		  <div class="form-group">
-  		    <label>What school district are you sending the records to?</label>
-  		    <input type="text" class="form-control" name="school_district">
-  		  </div>
-  		  <div class="form-group">
-  		    <label>What is the name of the school?</label>
-  		    <input type="text" class="form-control" name="school_name">
-  		  </div>
-  		  <div class="form-group">
-  		    <label>What is the school's fax number?</label>
-  		    <input type="tel" class="form-control" name="school_fax">
-  		  </div>
-
-  		  <hr>
-  		  <p class="lead">Finally, let us know how to get in touch with you if we have any questions about your request.</p>
-  		  <div class="form-group">
-  		    <label>What is your full name?</label>
-  		    <input type="text" class="form-control" name="requestor_name">
-  		  </div>
-  		  <div class="form-group">
-  		    <label>What's the best phone number to reach you at?</label>
-  		    <input type="tel" class="form-control" name="requestor_phone">
-  		  </div>
-
-  		  <hr>
-
-    		  <p class="lead">We're almost ready to submit your record transfer request. Click "I accept" to grant us permission to make a record request on your behalf.</p>
-    		  <small>
-    		  	<p>I hereby request the disclosure of information from my child's record. </p>
-  			<p>PROHIBITION OF REDISCLOSURE: This information has been disclosed to you from records whose confidentiality is protected by Federal Law. Federal regulation (42 CFR2) prohibits you from making any further disclosure of this information without my further consent. Additionally, I understand that this release may include information relating to: Acquired Immunodeficiency Syndrome (AIDS) or infection with HIV (Human Immunodeficiency Virus), psychiatric care, treatment for alcohol and/or drug abuse. I hereby absolve said person, firm, agency, physician, nurse, clinic, or hospital from any liability for releasing such information pursuant to this authorization.The Kansas City, Missouri Health Department and its staff who provide professional service to me are authorized to use any personal information about me for treatment, billing or healthcare operations within the Health Department. The Health Department as required by law discloses all positive reportable communicable diseases to the State Department of Health.I understand that I may revoke this consent at any time and that upon fulfillment of the above stated purpose, this consent will automatically expire without my express revocation, after ninety days from the date of signature. I do not authorize further release to any other third party.</p>
-  			</small>
-  			<a href="confirmation.html" type="button" class="btn btn-primary mb3">I accept</a>
-  	</form>
-</div>
-
-	</div>
-<footer class="container mt3 py3">
-		<a href="mailto:kcmo@codeforamerica.org?Subject=VaxFax%20Website" target="_blank">Contact us</a>
-</footer>
+  </div>
+  <footer class="container mt3 py3">
+      <a href="mailto:kcmo@codeforamerica.org?Subject=VaxFax%20Website" target="_blank">Contact us</a>
+  </footer>
 
 
-</body>
+  </body>
 </html>
