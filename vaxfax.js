@@ -1,15 +1,17 @@
 
 function successText(faxId) {
     return "Success! We have received your fax and your \
-    fax id is " + faxId + ". We will update you \
-    when the records have been sent to the school."
+        fax id is " + faxId + ". We will update you \
+        when the records have been sent to the school."
 }
 
 function failureText(faxId) {
-    return "We are sorry, but your request was unsuccessful. \
-    Please try again. If you continue to have issues, please \
-    call the Kansas City Department of Health Services at \
-    ***-***-****."
+    return "We could not complete your request. \
+        We're sorry about that! Double check to \
+        be sure you included all of the proper \
+        information. If you continue to have difficulties, \
+        please call us at 571-402-5377 or \
+        email us at kcmo@codeforamerica.org."
 }
 
 function processResult(result) {
@@ -36,8 +38,7 @@ function createDialog(dialogCopy, clear) {
 }
 
 function successCallbackFunction(dataResponse) {
-    var returnText = successText(dataResponse['fax_id'])
-    createDialog(returnText, true).dialog("open")
+    window.location.href = "success.html"
 }
 
 function failureCallbackFunction(dataResponse) {
