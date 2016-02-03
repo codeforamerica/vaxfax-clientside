@@ -38,8 +38,7 @@ function createDialog(dialogCopy, clear) {
 }
 
 function successCallbackFunction(dataResponse) {
-    var returnText = successText(dataResponse['fax_id'])
-    createDialog(returnText, true).dialog("open")
+    window.location.href = "success.html"
 }
 
 function failureCallbackFunction(dataResponse) {
